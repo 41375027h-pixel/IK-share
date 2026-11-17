@@ -39,7 +39,7 @@ if __name__ == "__main__":
     # 匯入正向運動學函式，用於驗證範例的 IK 解。
     from model_v3 import forward_kinematics
 
-    # 虛構尺寸與座標，長度採用任意一致單位。
+    # 尺寸與座標，長度採用任意一致單位。
     L1, L2 = 3.0, 2.0
     target = world_to_base((13, 7), (10, 5), 0.0)
     for angles in solve_ik(target, L1, L2):
